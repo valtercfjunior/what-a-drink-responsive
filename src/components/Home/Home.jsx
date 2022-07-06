@@ -1,14 +1,30 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Modal from "../Modal/Modal";
+import functions from "../../services/API";
 
 function Home() {
     
   const [busca, setBusca] = useState("");
   const [tipoBusca, setTipoBusca] = useState("bebida");
+  const [openModal, setOpenModal] = useState(false);
+  const [resultado, setResultado] = useState([]);
+  
+
+
+  async function reqAPIRandom() {
+      const drinks = await functions.getAPIRandom();
+      setResultado(drinks);
+      setOpenModal(true)
+      
+      
+    }
+  
+
 
 
   return (
-    <div className="h-screen flex justify-center items-center">
+    <div className="h-screen flex flex-col justify-center items-center">
       <div className="flex w-80 flex-col p-2 rounded-lg bg-cyan-300 gap-2">
         <img
           src="https://www.thecocktaildb.com/images/media/drink/vrwquq1478252802.jpg/preview"
@@ -30,6 +46,8 @@ function Home() {
         </select>
         <Link to={`/lista?type=${tipoBusca}&value=${busca}`}><button className="bg-cyan-900 rounded-lg text-zinc-100 min-w-full">Buscar</button></Link>
       </div>
+      <button onClick={()=>reqAPIRandom()} className="bg-zinc-100 rounded-lg p-2 mt-3">Random</button>
+      {openModal && <Modal toggleStateModal={setOpenModal}   details={resultado} />}
     </div>
   );
 

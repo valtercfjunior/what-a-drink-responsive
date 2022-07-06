@@ -18,6 +18,10 @@ const functions = {
     const { data } = await axios.get(`${URL}lookup.php?i=${idDrink}`);
 
     return data.drinks[0];
+  },
+  getAPIRandom: async function() {
+    const {data} = await axios.get('https://www.thecocktaildb.com/api/json/v1/1/random.php')
+    return data.drinks[0]
   }
 
 };

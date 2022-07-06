@@ -1,6 +1,8 @@
 function Modal({details, toggleStateModal }) {
   
   function getIngredientsList(){
+
+    
     
   const ingredientsList = []
 
