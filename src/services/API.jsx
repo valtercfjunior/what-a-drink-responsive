@@ -18,7 +18,8 @@ const functions = {
     const { data } = await axios.get(`${URL}lookup.php?i=${idDrink}`);
 
     return data.drinks[0];
-  },
+  }
+
 };
 
 export default functions;

@@ -3,7 +3,7 @@ import React from "react";
 import functions from "../../services/API";
 import { useEffect, useState } from "react";
 import Card from "../Cards/Card";
-import Modal from "../Modal";
+import Modal from "../Modal/Modal";
 
 function useQuery() {
   const { search } = useLocation();

@@ -8,8 +8,8 @@ function Home() {
 
 
   return (
-    <div className="w-100 h-screen flex justify-center items-center">
-      <div className="flex flex-col p-2 rounded-lg bg-cyan-300 gap-2">
+    <div className="h-screen flex justify-center items-center">
+      <div className="flex w-80 flex-col p-2 rounded-lg bg-cyan-300 gap-2">
         <img
           src="https://www.thecocktaildb.com/images/media/drink/vrwquq1478252802.jpg/preview"
           alt="imagem-bebida"
