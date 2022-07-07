@@ -3,8 +3,8 @@ import "./index.css";
 import "./App.css";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./Components/Home/Home.jsx";
-import Lista from "./Components/Lista/Lista.jsx";
+import Home from "./components/Home/Home.jsx";
+import Lista from "./components/Lista/Lista.jsx";
 
 import "./styles/global.css";
 
