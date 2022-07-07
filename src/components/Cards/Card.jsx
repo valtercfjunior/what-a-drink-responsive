@@ -1,20 +1,23 @@
 import functions from "../../services/API";
 
 function Card({ item, toggleStateModal, setDetails }) {
- async function getDetails(){
-    const valoresModal = await functions.getDetails(item.idDrink)
-    setDetails(valoresModal)
-    toggleStateModal(true)
+  async function getDetails() {
+    const valoresModal = await functions.getDetails(item.idDrink);
+    setDetails(valoresModal);
+    toggleStateModal(true);
   }
-  
+
   return (
     <div
-      onClick={() => getDetails()  }
-      
-      className=" bg-lime-300 flex flex-col justify-center items-center h-90 rounded-sm"
+      onClick={() => getDetails()}
+      className=" bg-zinc-200  flex flex-col justify-evenly items-center max-h-96 rounded-xl cursor-pointer hover:scale-105 transition-transform "
     >
-      <h1 className="text-red-600">{item.strDrink}</h1>
-      <img className="object-cover h-48 w-96" src={item.strDrinkThumb} alt="" />
+      <h1 className="text-[#009fb7] font-semibold text-xl">{item.strDrink}</h1>
+      <img
+        className="object-scale-down rounded-b-md w-72 "
+        src={item.strDrinkThumb}
+        alt=""
+      />
     </div>
   );
 }

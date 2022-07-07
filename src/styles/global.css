@@ -2,10 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    @apply bg-zinc-900 text-zinc-100
+body {
+  @apply bg-[#272727];
+  @apply text-[#EFF1F3];
 }
 
-*{
-   @apply text-zinc-800 
+* {
+  @apply font-myfont;
 }

@@ -27,36 +27,43 @@ function Lista() {
 
   const [resultado, setResultado] = useState([]);
 
-  const [openModal, setOpenModal] = useState(false)
+  const [openModal, setOpenModal] = useState(false);
 
-  const [detailsModal, setDetailsModal] = useState([])
+  const [detailsModal, setDetailsModal] = useState([]);
 
- 
   return (
-    <div>
-      <div className="flex justify-center">
+    <div className="flex flex-col justify-center items-center ">
+      <div className="flex justify-center ">
         <Link to="/">
-            <button className="w-20 m-2 bg-purple-600 rounded-md align-middle text-zinc-200">
-              New Search
-            </button>
-          </Link>
-          {openModal && <Modal toggleStateModal={setOpenModal}  details={detailsModal}/>}
+          <button className="w-24 h-10 mb-10 mt-3 font-semibold bg-[#FED766] rounded-md align-middle text-zinc-800">
+            New Search
+          </button>
+        </Link>
+        {openModal && (
+          <Modal toggleStateModal={setOpenModal} details={detailsModal} />
+        )}
       </div>
 
       <div className="grid grid-cols-3 gap-5  h-screen ">
-        
         {resultado == null ? (
-          <h1>Tente novamente clicando no botao abaixo.</h1>
+          <div className="w-full col-span-3 mt-10 p-2 font-semibold text-lg bg-zinc-800 rounded-md h-min flex flex-col items-center">
+            <h1>Bebida ou ingrediente inválido!</h1>
+            <p>Tente novamente clicando no botao "New Seach"</p>
+          </div>
         ) : (
           resultado.map((item, key) => {
-            return (<Card  item={item} toggleStateModal={setOpenModal} setDetails={setDetailsModal} key={key}></Card>)
+            return (
+              <Card
+                item={item}
+                toggleStateModal={setOpenModal}
+                setDetails={setDetailsModal}
+                key={key}
+              ></Card>
+            );
           })
         )}
-      
-        
       </div>
     </div>
-    
   );
 }
 
