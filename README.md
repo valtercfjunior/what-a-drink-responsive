@@ -14,9 +14,9 @@
 
 
 <h1 align="center">
-    <img src="/images/readme-img-1" style="width: 2000px; border-radius:10px " >
-    <img src="./images/readme-img-2" style="width: 2000px; border-radius:10px ">
-    <img src="./images/readme-img-3" style="width: 2000px; border-radius:10px ">
+    <img src="./images/readme-img-1.png" style="width: 2000px; border-radius:10px " >
+    <img src="./images/readme-img-2.png" style="width: 2000px; border-radius:10px ">
+    <img src="./images/readme-img-3.png" style="width: 2000px; border-radius:10px ">
 </h1>
 
 ## **Objetivo**
