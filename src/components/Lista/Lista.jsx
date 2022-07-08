@@ -16,6 +16,13 @@ function Lista() {
   let value = query.get("value");
   let type = query.get("type");
 
+
+  const [resultado, setResultado] = useState([]);
+
+  const [openModal, setOpenModal] = useState(false);
+
+  const [detailsModal, setDetailsModal] = useState([]);
+
   useEffect(() => {
     async function reqAPI() {
       const { drinks } = await functions.getAPI(type, value);
@@ -24,12 +31,6 @@ function Lista() {
 
     reqAPI();
   }, []);
-
-  const [resultado, setResultado] = useState([]);
-
-  const [openModal, setOpenModal] = useState(false);
-
-  const [detailsModal, setDetailsModal] = useState([]);
 
   return (
     <div className="flex flex-col justify-center items-center ">
@@ -44,7 +45,7 @@ function Lista() {
         )}
       </div>
 
-      <div className="grid grid-cols-3 gap-5  h-screen ">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-5 h-screen ">
         {resultado == null ? (
           <div className="w-full col-span-3 mt-10 p-2 font-semibold text-lg bg-zinc-800 rounded-md h-min flex flex-col items-center">
             <h1>Bebida ou ingrediente inválido!</h1>
