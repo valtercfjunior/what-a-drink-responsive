@@ -1,7 +1,7 @@
-<h1 align="center">What a drink</h1>
+<h1 align="center">What a drink - Responsive version</h1>
 
 
-<p align="center"> 🚀 Estudo de React, Tailwindcss, AXIOS  </p>
+<p align="center"> 🚀 Estudo de React, Tailwindcss responsive module, AXIOS  </p>
 
 <h1 align="center"><img alt="GitHub" src="https://img.shields.io/github/license/valtercfjunior/portfolio"></h1>
 
@@ -14,9 +14,9 @@
 
 
 <h1 align="center">
-    <img src="./images/readme-img-1.png" style="width: 2000px; border-radius:10px " >
-    <img src="./images/readme-img-2.png" style="width: 2000px; border-radius:10px ">
-    <img src="./images/readme-img-3.png" style="width: 2000px; border-radius:10px ">
+    <img src="./images/readme-img-resp-1.png" style="width: 2000px; border-radius:10px " >
+    <img src="./images/readme-img-resp-2.png" style="width: 2000px; border-radius:10px ">
+    <img src="./images/readme-img-resp-3.png" style="width: 2000px; border-radius:10px ">
 </h1>
 
 ## **Objetivo**
