@@ -16,7 +16,7 @@ function Home() {
   }
 
   return (
-    <div className="h-screen flex flex-col justify-center text-center items-center">
+    <div className="h-screen flex flex-col text-center items-center">
       <div className="text-2xl text-zinc-100 flex flex-col justify-center items-center">
         <h1>Clique no botão "Random" para retornar uma bebida aleatória.</h1>
         <p>ou</p>

@@ -14,7 +14,7 @@ function Modal({ details, toggleStateModal }) {
   }
 
   return (
-    <div className="h-screen overflow-y-auto w-full text-[#272727] bg-zinc-400/90 fixed flex justify-center">
+    <div className="h-full overflow-y-auto w-full text-[#272727] bg-zinc-400/90 fixed flex justify-center">
       <div className="w-full  mt-2 md:w-1/3 p-5 h-min md:h-min bg-slate-50 rounded-lg justify-center flex flex-col">
         <div className="w-full align-middle h-10 flex justify-between items-center mb-1">
           <div className="w-full flex justify-center ">

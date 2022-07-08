@@ -10,7 +10,7 @@ function Card({ item, toggleStateModal, setDetails }) {
   return (
     <div
       onClick={() => getDetails()}
-      className=" bg-zinc-200  flex flex-col justify-evenly items-center max-h-96 rounded-xl cursor-pointer hover:scale-105 transition-transform "
+      className=" bg-zinc-200  flex flex-col justify-evenly items-center max-h-96 rounded-xl cursor-pointer "
     >
       <h1 className="text-[#009fb7] font-semibold text-xl">{item.strDrink}</h1>
       <img
