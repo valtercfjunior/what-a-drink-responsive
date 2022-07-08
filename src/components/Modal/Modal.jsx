@@ -32,7 +32,7 @@ function Modal({ details, toggleStateModal }) {
         <section>
           <div className="flex justify-center ">
             <img
-              className="w-1/2 rounded-lg"
+              className="w-1/2 h-1/2 rounded-lg "
               src={details.strDrinkThumb}
               alt=""
             />
